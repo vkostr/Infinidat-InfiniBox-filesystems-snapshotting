@@ -4,7 +4,7 @@ Doing snapshots of specific filesystems (NFS) on InfiniBox once per day, locking
 
 What it does:
 When launched, it checks for snapshots for file systems from the list (configurable) on a given day of the week and deletes them.
-After that, it creates a new one and locks it for 6 days (configurable)
+After that, it creates a new one and locks it for 6 days (configurable).
 Code can be easily changed to do snapshots of block devices instead of filesystems.
 
 How it can be used:
