@@ -11,3 +11,5 @@ How it can be used:
 It should be run once a day from cron or from a script. As the result you will get seven snapshots for seven days to restore information for previous periods. If you lock snapshots for a longer period, then there will be more of them, for a greater number of days. If you change snapshot name to include not only date, but also time, you cah run it many times per day to get as much snapshots as you want. As the lock expires, the script will delete all expired snapshots for that day. Be careful with locking period.
 
 To work, you need a user on the storage system. I recommend creating a separate pool on the storage system, placing file systems there, making a user with pool_admin rights and giving him rights only to this pool.
+
+Tested on python 3.6
